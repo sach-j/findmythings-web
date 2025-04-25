@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Button from './Button';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,8 +7,10 @@ const Header: React.FC = () => {
   return (
     <header className="py-4 border-b border-gray-100">
       <div className="container flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold text-primary">FindMyThings</Link>
-        
+        <Link to="/" className="flex items-center gap-2">
+          <img src="/images/FindMyThingsIcon.jpg" alt="FindMyThings" className="h-8 w-auto" />
+          <span className="text-2xl font-bold text-primary">FindMyThings</span>
+        </Link>        
         {/* Mobile menu button */}
         <button 
           className="md:hidden p-2"
@@ -23,9 +24,8 @@ const Header: React.FC = () => {
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <Link to="/" className="text-gray-600 hover:text-primary">Home</Link>
-          <Link to="/about" className="text-gray-600 hover:text-primary">About</Link>
-          <Link to="/contact" className="text-gray-600 hover:text-primary">Contact</Link>
-          <a href="#download" className="btn btn-primary">Download</a>
+          <Link to="/features" className="text-gray-600 hover:text-primary">Features</Link>
+          <a href="#download" className="ml-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Download</a>
         </nav>
       </div>
 
@@ -34,9 +34,8 @@ const Header: React.FC = () => {
         <div className="md:hidden py-4 container">
           <div className="flex flex-col gap-4">
             <Link to="/" className="text-gray-600 hover:text-primary">Home</Link>
-            <Link to="/about" className="text-gray-600 hover:text-primary">About</Link>
-            <Link to="/contact" className="text-gray-600 hover:text-primary">Contact</Link>
-            <a href="#download" className="btn btn-primary w-full text-center">Download</a>
+            <Link to="/features" className="text-gray-600 hover:text-primary">Features</Link>
+            <a href="#download" className="bg-primary text-white px-4 py-2 rounded-md text-center">Download</a>
           </div>
         </div>
       )}
