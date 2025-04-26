@@ -5,109 +5,90 @@ const Privacy: React.FC = () => {
     <div className="py-16">
       <div className="container">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+          <h1 className="text-4xl font-bold mb-8">Find My Things Privacy Policy</h1>
           <p className="text-gray-600 mb-8">Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
           
           <div className="prose prose-lg max-w-none">
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
               <p>
-                Welcome to FindMyThings ("we," "our," or "us"). We are committed to protecting your privacy and the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our FindMyThings mobile application ("App").
-              </p>
-              <p>
-                Please read this Privacy Policy carefully. By using the App, you agree to the terms of this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please do not access or use the App.
+                Find My Things ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information about you when you use our mobile application Find My Things (the "App").
               </p>
             </section>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
-              <h3 className="text-xl font-medium mb-2">Personal Information</h3>
-              <p>We may collect the following personal information:</p>
+
+              <h3 className="text-xl font-medium mb-2">Information You Provide</h3>
               <ul className="list-disc pl-5 mb-4">
-                <li>Your name and email address when you create an account</li>
-                <li>Device information, including device model, operating system, and unique device identifiers</li>
-                <li>App usage data and preferences</li>
-                <li>Photos you upload to the App</li>
-                <li>Location data (if you grant permission)</li>
+                <li>Personal information such as name and email address</li>
+                  <li>Subscription and payment information (processed securely by Apple)</li>
               </ul>
-              
-              <h3 className="text-xl font-medium mb-2">Item Information</h3>
-              <p>When you add items to the App, we collect information about those items, including:</p>
+
+              <h3 className="text-xl font-medium mb-2">Information Collected Automatically</h3>
               <ul className="list-disc pl-5">
-                <li>Item descriptions and categorizations</li>
-                <li>Photos of items</li>
-                <li>Location data associated with items</li>
-                <li>Custom tags and notes</li>
-                <li>Value information (for Premium users)</li>
+                <li>Device information (model, operating system)</li>
+                <li>App usage statistics and analytics</li>
+                <li>Error logs and performance data</li>
               </ul>
             </section>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">How We Use Your Information</h2>
-              <p>We use the information we collect to:</p>
+              <p>We use your information to:</p>
               <ul className="list-disc pl-5">
-                <li>Provide, maintain, and improve the App functionality</li>
-                <li>Process and fulfill your requests, such as tracking items and providing notifications</li>
-                <li>Personalize your experience and deliver content relevant to your interests</li>
-                <li>Communicate with you about updates, security alerts, and support</li>
-                <li>Monitor and analyze usage patterns and trends</li>
-                <li>Protect against, identify, and prevent fraud and other illegal activity</li>
+                <li>Provide, maintain, and improve the App</li>
+                <li>Process transactions and manage your account</li>
+                <li>Respond to your comments and questions</li>
+                <li>Send you technical notices and updates</li>
+                <li>Analyze usage patterns to enhance user experience</li>
               </ul>
             </section>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Data Storage and Security</h2>
               <p>
-                We implement appropriate technical and organizational measures to protect your personal information against unauthorized or unlawful processing, accidental loss, destruction, or damage. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+                All your inventory data is stored locally on your device and optionally backed up using your iCloud account. We implement appropriate technical and organizational measures to protect your personal information.
               </p>
+            </section>
+            
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Subscription Information</h2>
               <p>
-                Your data is stored on secure servers and within your device's local storage. We use encryption to protect sensitive information transmitted online.
+                Subscription payments are processed by Apple. We do not store your payment information. For information about how Apple handles your payment data, please refer to Apple's Privacy Policy.
               </p>
             </section>
             
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Sharing Your Information</h2>
-              <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except in the following circumstances:</p>
+              <h2 className="text-2xl font-semibold mb-4">Third-Party Services</h2>
+              <p>Our app may use third-party services that collect information. These services include:</p>
               <ul className="list-disc pl-5">
-                <li>With service providers who perform services on our behalf</li>
-                <li>To comply with legal obligations</li>
-                <li>To protect and defend our rights and property</li>
-                <li>With your consent or at your direction</li>
-              </ul>
-            </section>
-            
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Your Choices</h2>
-              <p>You have several choices regarding your personal information:</p>
-              <ul className="list-disc pl-5">
-                <li>You can access and update your account information through the App settings</li>
-                <li>You can choose whether to allow location permissions</li>
-                <li>You can delete items and their associated data from your inventory</li>
-                <li>You can request deletion of your account by contacting support</li>
+                <li>Analytics tools to improve app performance</li>
+                <li>Error reporting tools to identify and fix bugs</li>
               </ul>
             </section>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Children's Privacy</h2>
               <p>
-                Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
+                The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
               </p>
             </section>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Changes to This Privacy Policy</h2>
               <p>
-                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
               </p>
             </section>
             
             <section>
               <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
               <p>
-                If you have any questions or concerns about this Privacy Policy, please contact us at:
+                If you have any questions about this Privacy Policy, please contact us at:
               </p>
               <p className="font-medium mt-2">
-                privacy@findmythings.app
+                sachtech.com.apps@gmail.com
               </p>
             </section>
           </div>
