@@ -19,7 +19,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#download">
                   <img
-                    src="/images/appstoredownload-white.png"
+                    src={`${import.meta.env.BASE_URL}images/appstoredownload-white.png`}
                     alt="Download on the App Store"
                     className="h-20"
                   />
@@ -28,12 +28,12 @@ const Home: React.FC = () => {
             </div>
             <div className="flex-1 flex justify-center items-center gap-8">
               <img
-                src="/images/1267@3x.png"
+                src={`${import.meta.env.BASE_URL}images/1267@3x.png`}
                 alt="App screenshot 1"
                 className="rounded-xl shadow-xl transform rotate-3 w-2/5"
               />
               <img
-                src="/images/1265@3x.png"
+                src={`${import.meta.env.BASE_URL}images/1265@3x.png`}
                 alt="App screenshot 2"
                 className="rounded-xl shadow-xl transform -rotate-3 w-2/5"
               />
@@ -52,12 +52,12 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 flex justify-center items-center gap-8">
               <img
-                src="/images/1268@3x.png"
+                src={`${import.meta.env.BASE_URL}images/1268@3x.png`}
                 alt="Feature screenshot 1"
                 className="rounded-xl shadow-lg transform rotate-355 w-2/5"
               />
               <img
-                src="/images/1269@3x.png"
+                src={`${import.meta.env.BASE_URL}images/1269@3x.png`}
                 alt="Feature screenshot 2"
                 className="rounded-xl shadow-lg transform -rotate-355 w-2/5"
               />

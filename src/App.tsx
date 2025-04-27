@@ -8,8 +8,11 @@ import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 
 function App() {
+  // Use basename only in production on github pages
+  const basePath = window.location.hostname === 'sach-j.github.io' ? '/findmythings-web' : '';
+  
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router basename={basePath}>
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-grow">

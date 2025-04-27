@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <header className="py-4 border-b border-gray-100">
       <div className="container flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/images/FindMyThingsIcon.jpg" alt="FindMyThings" className="h-8 w-auto" />
+          <img src={`${import.meta.env.BASE_URL}images/FindMyThingsIcon.jpg`} alt="FindMyThings" className="h-8 w-auto" />
           <span className="text-2xl font-bold text-primary">FindMyThings</span>
         </Link>        
         {/* Mobile menu button */}
