@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/images/FindMyThingsIcon.jpg" />
+    <link rel="icon" type="image/jpeg" href="/findmythings-web/images/FindMyThingsIcon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FindMyThings - Track Your Belongings Easily</title>
     <meta
@@ -20,7 +20,7 @@
       property="og:description"
       content="FindMyThings helps you keep track of your valuable items using location technology. Never lose your keys, wallet, or bag again."
     />
-    <meta property="og:image" content="/images/FindMyThingsSocialCard.jpg" />
+    <meta property="og:image" content="/findmythings-web/images/FindMyThingsSocialCard.jpg" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="YOUR_WEBSITE_URL" />
@@ -34,10 +34,28 @@
     />
     <meta
       property="twitter:image"
-      content="/images/FindMyThingsSocialCard.jpg"
+      content="/findmythings-web/images/FindMyThingsSocialCard.jpg"
     />
-    <script type="module" crossorigin src="/assets/index-v6XZY10X.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DEDnYBx5.css">
+    
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+    <script type="module" crossorigin src="/findmythings-web/assets/index-B-lCoxvV.js"></script>
+    <link rel="stylesheet" crossorigin href="/findmythings-web/assets/index-DEDnYBx5.css">
   </head>
   <body>
     <div id="root"></div>
