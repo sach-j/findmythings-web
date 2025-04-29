@@ -7,6 +7,7 @@ import Support from './pages/Support'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 import PageViewTracker from './components/PageViewTracker'
+import CookieConsentBanner from './components/CookieConsent'
 
 function App() {
   // Use basename only in production on github pages
@@ -27,6 +28,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <CookieConsentBanner />
       </div>
     </Router>
   )

@@ -3,6 +3,7 @@ declare global {
     interface Window {
         dataLayer: unknown[];
         gtag: (command: string, action: string, params?: Record<string, unknown>) => void;
+        gaEnabled?: boolean;
     }
 }
 
@@ -12,18 +13,23 @@ export const initializeGA = (measurementId: string) => {
     console.log(`GA initialization bypassed - using GTM with ID related to: ${measurementId}`);
 };
 
-// Track page views using GTM
+// Track page views using GTM - only if user has given consent
 export const trackPageView = (path: string) => {
-    if (window.gtag) {
+    // Only track if consent is given
+    if (window.gtag && window.gaEnabled !== false) {
         window.gtag('event', 'page_view', {
             page_path: path
         });
     }
 };
 
-// Track custom events using GTM
+// Track custom events using GTM - only if user has given consent
 export const trackEvent = (category: string, action: string, label?: string, value?: number) => {
-    if (window.gtag) {
+    // Special case: always track cookie consent events
+    const isCookieConsentEvent = category === 'Cookie Consent';
+
+    // Only track if consent is given or it's a consent event itself
+    if (window.gtag && (window.gaEnabled !== false || isCookieConsentEvent)) {
         window.gtag('event', action, {
             event_category: category,
             event_label: label,
