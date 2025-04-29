@@ -6,6 +6,7 @@ import Features from './pages/Features'
 import Support from './pages/Support'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
+import PageViewTracker from './components/PageViewTracker'
 
 function App() {
   // Use basename only in production on github pages
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router basename={basePath}>
       <div className="min-h-screen flex flex-col">
+        <PageViewTracker />
         <Header />
         <main className="flex-grow">
           <Routes>
