@@ -4,17 +4,33 @@
     <meta charset="UTF-8" />
     <!-- Google Tag Manager -->
     <script>
+      // Initialize dataLayer
       window.dataLayer = window.dataLayer || [];
+      
+      // Define gtag function
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
       
       // Set default consent mode to denied until user consents
       gtag('consent', 'default', {
         'analytics_storage': 'denied',
-        'ad_storage': 'denied'
+        'ad_storage': 'denied',
+        'wait_for_update': 500 // Wait for consent signal
       });
-
-      gtag('config', 'G-247YH6T1TZ');
+      
+      // Initialize with basic settings
+      gtag('js', new Date());
+      gtag('config', 'G-247YH6T1TZ', {
+        'anonymize_ip': true, // IP anonymization
+        'send_page_view': false // Defer page view until consent is given
+      });
+      
+      // Check for existing consent from cookie
+      const hasConsent = document.cookie.split(';').some(c => c.trim().startsWith('userAnalyticsConsent=true'));
+      if (hasConsent) {
+        gtag('consent', 'update', {
+          'analytics_storage': 'granted'
+        });
+      }
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-247YH6T1TZ"></script>
     <!-- End Google Tag Manager -->

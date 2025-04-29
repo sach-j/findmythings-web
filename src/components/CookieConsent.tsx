@@ -26,6 +26,23 @@ const CookieConsentBanner = () => {
   const handleAccept = () => {
     window.gaEnabled = true;
     Cookies.set('userAnalyticsConsent', 'true', { expires: 365 });
+    
+    // Update Google consent mode to allow analytics
+    if (window.gtag) {
+      window.gtag('consent', 'update', {
+        'analytics_storage': 'granted',
+        'ad_storage': 'denied' // Keep ad storage denied unless you need it
+      });
+    }
+    
+    // Push consent granted event to dataLayer
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        'event': 'cookie_consent_update',
+        'analytics_storage': 'granted'
+      });
+    }
+    
     trackEvent('Cookie Consent', 'Accepted');
   };
 
