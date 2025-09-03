@@ -132,7 +132,7 @@ const Terms: React.FC = () => {
                 If you have any questions or concerns about these Terms, please contact us at:
               </p>
               <p className="font-medium mt-2">
-                legal@findmythings.app
+                sachtech.com.apps@gmail.com
               </p>
             </section>
           </div>

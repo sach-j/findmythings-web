@@ -7,19 +7,19 @@ const Features: React.FC = () => {
         <div className="container text-center">
           <h1 className="text-4xl font-bold mb-4">How does FindMyThings work?</h1>
           <p className="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
-            FindMyThings helps you organize, track, and locate all your important belongings with powerful features for both free and premium users.
+            FindMyThings helps you organize, categorize, and manage all your important belongings with powerful inventory management features for both free and premium users.
           </p>
           
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
             <img 
-              src="/feature-mockup.png" 
+              src="/images/1351@3x.png" 
               alt="FindMyThings app interface" 
               className="mx-auto mb-16 rounded-lg shadow-md"
               style={{ maxHeight: '500px' }}
             />
             
             <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-              When you add an item to FindMyThings, our app lets you categorize and tag it, track its location, add photos, and set up alerts. The powerful search and organization features help you keep your inventory in order, while smart notifications ensure you never lose track of what matters.
+              When you add an item to FindMyThings, you can categorize and tag it, organize by location, add photos with automatic optimization, and set up borrowing alerts. The powerful search and filtering features help you keep your inventory organized, while smart notifications help you track borrowed items and return dates.
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Features: React.FC = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Basic item tracking (limited to 15-20 items)</span>
+                  <span>Item tracking with categories and locations</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,7 +67,25 @@ const Features: React.FC = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Simple notifications</span>
+                  <span>Basic borrowing reminders and return notifications</span>
+                </li>
+                <li className="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Collections for organizing related items</span>
+                </li>
+                <li className="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Automatic image optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>QR code generation for items</span>
                 </li>
               </ul>
             </div>
@@ -122,7 +140,19 @@ const Features: React.FC = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Data export capabilities</span>
+                  <span>Data export and import capabilities</span>
+                </li>
+                <li className="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Advanced notification schedules (1 week and 3 days before due)</span>
+                </li>
+                <li className="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Rich notifications with item images</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

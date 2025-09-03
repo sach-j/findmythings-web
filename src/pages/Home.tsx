@@ -12,9 +12,9 @@ const Home: React.FC = () => {
                 Track your belongings with just a tap
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Introducing FindMyThings, the app that simplifies item tracking
-                and inventory management. Add items, categorize them, and never
-                lose track of what matters to you.
+                Introducing FindMyThings, the organizational app that simplifies 
+                item tracking and inventory management. Add items, categorize them 
+                by location, and never lose track of what matters to you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#download">
@@ -64,17 +64,16 @@ const Home: React.FC = () => {
             </div>
             <div className="flex-1">
               <p className="text-lg text-gray-700">
-                When you add an item to FindMyThings, our app helps you
-                categorize and organize it properly. You can add photos,
-                descriptions, location information, tags, and even set reminders
+                When you add an item to FindMyThings, you can categorize and 
+                organize it by location, add optimized photos, create detailed 
+                descriptions, apply custom tags, and set up borrowing reminders 
                 for items you've loaned out.
               </p>
               <p className="text-lg text-gray-700 mt-4">
                 Our intelligent search and filtering system makes it easy to
-                find exactly what you're looking for, while also allowing you to
-                categorise your items are by creating custom lists. With Premium
-                features, you get unlimited items, custom item notifications and
-                advanced borrowed item reminders.
+                find exactly what you're looking for. Organize items with 
+                collections, generate QR codes for quick access, and get 
+                smart notifications to track borrowed items and return dates.
               </p>
             </div>
           </div>

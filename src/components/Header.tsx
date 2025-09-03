@@ -25,6 +25,7 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex items-center gap-6">
           <Link to="/" className="text-gray-600 hover:text-primary">Home</Link>
           <Link to="/features" className="text-gray-600 hover:text-primary">Features</Link>
+          <Link to="/coming-soon" className="text-gray-600 hover:text-primary">Coming Soon</Link>
           <a href="#download" className="ml-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Download</a>
         </nav>
       </div>
@@ -35,6 +36,7 @@ const Header: React.FC = () => {
           <div className="flex flex-col gap-4">
             <Link to="/" className="text-gray-600 hover:text-primary">Home</Link>
             <Link to="/features" className="text-gray-600 hover:text-primary">Features</Link>
+            <Link to="/coming-soon" className="text-gray-600 hover:text-primary">Coming Soon</Link>
             <a href="#download" className="bg-primary text-white px-4 py-2 rounded-md text-center">Download</a>
           </div>
         </div>
