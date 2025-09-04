@@ -254,6 +254,63 @@ const Features: React.FC = () => {
         </div>
       </section>
 
+      {/* Dark Mode Feature Highlight */}
+      <section className="py-16 bg-gradient-to-r from-slate-900 to-slate-700">
+        <div className="container">
+          <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
+            <div className="flex-1 order-2 lg:order-1">
+              <img 
+                src="/images/1351@3x.png" 
+                alt="Dark mode interface showing elegant dark theme design" 
+                className="rounded-2xl shadow-2xl max-w-full h-auto"
+              />
+            </div>
+            <div className="flex-1 order-1 lg:order-2 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Beautiful Dark Mode</h2>
+              <p className="text-lg text-gray-200 mb-6">
+                Switch seamlessly between light and dark themes for comfortable viewing in any lighting condition. Dark mode reduces eye strain during nighttime use and provides a sleek, modern appearance.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="bg-slate-600 p-2 rounded-lg mr-4 mt-1">
+                    <svg className="w-5 h-5 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1 text-white">Automatic Theme Switching</h3>
+                    <p className="text-gray-300">Follows your iOS system preferences automatically</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="bg-slate-600 p-2 rounded-lg mr-4 mt-1">
+                    <svg className="w-5 h-5 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1 text-white">Reduced Eye Strain</h3>
+                    <p className="text-gray-300">Perfect for late-night organization sessions</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="bg-slate-600 p-2 rounded-lg mr-4 mt-1">
+                    <svg className="w-5 h-5 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3H5a2 2 0 00-2 2v12a4 4 0 004 4h2a2 2 0 002-2V5a2 2 0 00-2-2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1 text-white">Battery Friendly</h3>
+                    <p className="text-gray-300">Dark pixels use less power on OLED screens</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Premium vs Free Comparison */}
       <section className="py-16">
         <div className="container">
