@@ -120,23 +120,92 @@ const Privacy: React.FC = () => {
             </section>
             
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Third-Party Services</h2>
-              <p>Our app and website may use third-party services that collect information. These services include:</p>
-              <ul className="list-disc pl-5">
-                <li>Google Analytics to analyze website traffic and usage</li>
-                <li>Google Tag Manager to manage and deploy marketing tags</li>
-                <li>Analytics tools to improve app performance</li>
-                <li>Error reporting tools to identify and fix bugs</li>
+              <h2 className="text-2xl font-semibold mb-4">Information Sharing and Third-Party Services</h2>
+              
+              <h3 className="text-xl font-medium mb-2">When We Share Your Information</h3>
+              <p className="mb-4">
+                We may share your personal information in the following circumstances:
+              </p>
+              
+              <h4 className="text-lg font-medium mb-2">Service Providers</h4>
+              <p className="mb-2">We may share information with third-party service providers who assist us in operating our app and website:</p>
+              <ul className="list-disc pl-5 mb-4">
+                <li><strong>Analytics Providers:</strong> Google Analytics to analyze website traffic and usage patterns</li>
+                <li><strong>Marketing Tools:</strong> Google Tag Manager to manage and deploy marketing tags</li>
+                <li><strong>Performance Monitoring:</strong> Analytics tools to improve app performance and identify issues</li>
+                <li><strong>Error Reporting:</strong> Crash reporting services to identify and fix bugs</li>
+                <li><strong>App Store Services:</strong> Apple for subscription processing and app distribution</li>
               </ul>
-              <p className="mt-2">
-                These third-party services may use cookies and similar technologies to collect information about your use of our website and app. Please refer to their respective privacy policies for more information on how they process your data.
+              
+              <h4 className="text-lg font-medium mb-2">Business Partners</h4>
+              <p className="mb-4">
+                We do not currently share personal information with business partners for marketing purposes. If this changes, we will update this policy and notify you.
+              </p>
+              
+              <h4 className="text-lg font-medium mb-2">Legal Requirements</h4>
+              <p className="mb-2">We may disclose your information when required by law or to:</p>
+              <ul className="list-disc pl-5 mb-4">
+                <li>Comply with legal processes, court orders, or government requests</li>
+                <li>Enforce our Terms of Service or other agreements</li>
+                <li>Protect our rights, property, or safety, or that of our users</li>
+                <li>Investigate suspected fraud, security breaches, or other violations</li>
+                <li>Comply with applicable data protection and privacy laws</li>
+              </ul>
+              
+              <h4 className="text-lg font-medium mb-2">Business Transfers</h4>
+              <p className="mb-4">
+                In the event of a merger, acquisition, sale of assets, or bankruptcy, your personal information may be transferred to the acquiring entity. We will provide notice before your information is transferred and becomes subject to a different privacy policy.
+              </p>
+              
+              <h4 className="text-lg font-medium mb-2">Affiliates</h4>
+              <p className="mb-4">
+                We may share information with our affiliates, subsidiaries, or parent companies, if any, for business purposes. All such entities will be required to use your information in accordance with this Privacy Policy.
+              </p>
+              
+              <h3 className="text-xl font-medium mb-2">Third-Party Privacy Policies</h3>
+              <p>
+                These third-party services have their own privacy policies. We encourage you to review them:
+              </p>
+              <ul className="list-disc pl-5 mb-4">
+                <li><strong>Google Analytics:</strong> <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline">Google Privacy Policy</a></li>
+                <li><strong>Apple App Store:</strong> <a href="https://www.apple.com/privacy/" className="text-blue-600 hover:underline">Apple Privacy Policy</a></li>
+              </ul>
+              
+              <p>
+                We are not responsible for the privacy practices of these third parties and recommend that you carefully review their privacy policies.
+              </p>
+            </section>
+            
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">International Data Transfers</h2>
+              <p className="mb-4">
+                Your information may be transferred to, stored, and processed in countries other than your country of residence, including the United States and other countries where our service providers operate.
+              </p>
+              
+              <h3 className="text-xl font-medium mb-2">Cross-Border Processing</h3>
+              <p className="mb-4">
+                When we transfer your personal information internationally, we implement appropriate safeguards to protect your data:
+              </p>
+              <ul className="list-disc pl-5 mb-4">
+                <li><strong>Adequacy Decisions:</strong> We transfer data to countries that have been deemed to provide adequate protection by relevant authorities</li>
+                <li><strong>Standard Contractual Clauses:</strong> We use European Commission-approved standard contractual clauses for transfers to countries without adequacy decisions</li>
+                <li><strong>Certification Programs:</strong> We work with service providers who participate in recognized certification frameworks</li>
+                <li><strong>Technical Safeguards:</strong> All data transfers are protected by encryption and other technical measures</li>
+              </ul>
+              
+              <h3 className="text-xl font-medium mb-2">Your Rights Regarding International Transfers</h3>
+              <p className="mb-4">
+                If you are located in the European Economic Area (EEA), UK, or Switzerland, you have the right to request information about the safeguards we have in place for international transfers of your personal data. You may contact us using the information provided in the "Contact Us" section.
               </p>
             </section>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Children's Privacy</h2>
+              <p className="mb-4">
+                The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you are between 13 and 18 years of age, you may only use the App with parental or guardian consent.
+              </p>
               <p>
-                The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
+                If we become aware that we have collected personal information from a child under 13 without parental consent, we will take steps to delete that information as quickly as possible. If you believe we may have collected information from a child under 13, please contact us immediately at sachtech.com.apps@gmail.com.
               </p>
             </section>
             
@@ -149,18 +218,58 @@ const Privacy: React.FC = () => {
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Your Privacy Rights</h2>
-              <p>
-                Depending on your location, you may have certain rights regarding your personal information, such as:
+              <p className="mb-4">
+                Depending on your location and applicable laws, you may have certain rights regarding your personal information:
               </p>
-              <ul className="list-disc pl-5">
-                <li>The right to access your personal information</li>
-                <li>The right to correct inaccurate information</li>
-                <li>The right to request deletion of your data</li>
-                <li>The right to opt-out of certain data uses</li>
-                <li>The right to withdraw consent at any time</li>
+              
+              <h3 className="text-xl font-medium mb-2">General Privacy Rights</h3>
+              <ul className="list-disc pl-5 mb-4">
+                <li><strong>Right to Access:</strong> Request a copy of the personal information we hold about you</li>
+                <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete information</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of your personal data under certain circumstances</li>
+                <li><strong>Right to Restrict Processing:</strong> Request that we limit how we use your information</li>
+                <li><strong>Right to Object:</strong> Object to our processing of your information for certain purposes</li>
+                <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time where processing is based on consent</li>
               </ul>
-              <p className="mt-2">
-                To exercise any of these rights, please contact us using the information provided in the "Contact Us" section.
+              
+              <h3 className="text-xl font-medium mb-2">Data Portability</h3>
+              <p className="mb-4">
+                You have the right to receive your personal data in a structured, commonly used format and to transmit that data to another controller. We provide data export functionality within the App to facilitate this right.
+              </p>
+              
+              <h3 className="text-xl font-medium mb-2">Marketing and Communications</h3>
+              <p className="mb-4">
+                You can opt-out of marketing communications at any time by:
+              </p>
+              <ul className="list-disc pl-5 mb-4">
+                <li>Following the unsubscribe instructions in any marketing email</li>
+                <li>Contacting us directly using the information in the "Contact Us" section</li>
+                <li>Adjusting your notification preferences in the App settings</li>
+              </ul>
+              
+              <h3 className="text-xl font-medium mb-2">Regional Rights</h3>
+              <p className="mb-2"><strong>European Union/EEA Users:</strong></p>
+              <ul className="list-disc pl-5 mb-4">
+                <li>All rights listed above under GDPR</li>
+                <li>Right to lodge a complaint with your local data protection authority</li>
+                <li>Right to request details about international data transfers</li>
+              </ul>
+              
+              <p className="mb-2"><strong>California Residents (CCPA):</strong></p>
+              <ul className="list-disc pl-5 mb-4">
+                <li>Right to know what personal information is collected</li>
+                <li>Right to delete personal information</li>
+                <li>Right to opt-out of the sale of personal information (we do not sell personal information)</li>
+                <li>Right to non-discrimination for exercising CCPA rights</li>
+              </ul>
+              
+              <h3 className="text-xl font-medium mb-2">How to Exercise Your Rights</h3>
+              <p className="mb-4">
+                To exercise any of these rights, please contact us at sachtech.com.apps@gmail.com with your request. We will respond within the timeframes required by applicable law (typically 30 days).
+              </p>
+              
+              <p>
+                <strong>Verification:</strong> To protect your privacy, we may need to verify your identity before processing your request. We may also charge a reasonable fee for excessive or repetitive requests.
               </p>
             </section>
             
