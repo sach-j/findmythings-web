@@ -245,7 +245,7 @@ const Features: React.FC = () => {
             </div>
             <div className="flex-1">
               <img 
-                src="/images/1352@3x.png" 
+                src={`${import.meta.env.BASE_URL}images/1352@3x.png`} 
                 alt="Collections feature showing moving list with various household items" 
                 className="rounded-2xl shadow-2xl max-w-full h-auto"
               />
@@ -260,7 +260,7 @@ const Features: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
             <div className="flex-1 order-2 lg:order-1">
               <img 
-                src="/images/1351@3x.png" 
+                src={`${import.meta.env.BASE_URL}images/1351@3x.png`}
                 alt="Dark mode interface showing elegant dark theme design" 
                 className="rounded-2xl shadow-2xl max-w-full h-auto"
               />
