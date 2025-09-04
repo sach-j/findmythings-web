@@ -82,8 +82,33 @@ const Privacy: React.FC = () => {
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Data Storage and Security</h2>
+              
+              <h3 className="text-xl font-medium mb-2">Local Data Storage</h3>
+              <p className="mb-4">
+                Your inventory data (items, categories, locations, collections, and photos) is stored locally on your device using secure iOS storage mechanisms. This includes:
+              </p>
+              <ul className="list-disc pl-5 mb-4">
+                <li>Item details, descriptions, and metadata</li>
+                <li>Optimized photos (automatically compressed to save space)</li>
+                <li>Custom categories, locations, and tags</li>
+                <li>Borrowing history and reminder settings</li>
+                <li>Collections and organizational preferences</li>
+              </ul>
+              
+              <h3 className="text-xl font-medium mb-2">iCloud Backup (Optional)</h3>
+              <p className="mb-4">
+                If you have enabled iCloud Backup on your device, your FindMyThings data may be included in your device's automatic iCloud backup. This is controlled entirely by your device settings, not by our app:
+              </p>
+              <ul className="list-disc pl-5 mb-4">
+                <li><strong>User Control:</strong> You can enable or disable iCloud backup for FindMyThings in your device's Settings &gt; [Your Name] &gt; iCloud &gt; iCloud Backup</li>
+                <li><strong>Apple's Responsibility:</strong> iCloud backup and restoration are handled entirely by Apple's iCloud service</li>
+                <li><strong>Data Protection:</strong> iCloud backups are encrypted and protected by your Apple ID credentials</li>
+                <li><strong>Restoration:</strong> When restoring from an iCloud backup, your FindMyThings data will be restored automatically if previously backed up</li>
+              </ul>
+              
+              <h3 className="text-xl font-medium mb-2">Security Measures</h3>
               <p>
-                All your inventory data is stored locally on your device and optionally backed up using your iCloud account. We implement appropriate technical and organizational measures to protect your personal information.
+                We implement appropriate technical and organizational measures to protect your personal information, including secure local storage and adherence to iOS security best practices. However, no system is 100% secure, and we cannot guarantee absolute security of your data.
               </p>
             </section>
             
